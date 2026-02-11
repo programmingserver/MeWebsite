@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Gallery Page - My Website</title>
+    <style>
+        /*Para sa body at background */
+        body {
+            background-image: url('Wallpaper.avif');
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Paragraph styling with gradient background */
+        p {
+            background-image: url('white-radial-gradient.avif');
+        }
+
+        /* H1 styling with gradient background */
+        h1 {
+            background-image: url('white-radial-gradient.avif');
+        }
+
+        /* Header styling */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Webpage container */
+        .webpage {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation styling */
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logos {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Active page indicator */
+        .nav-links a.active {
+            font-weight: bold;
+            border-bottom: 2px solid white;
+        }
+
+        /* Content para ma style ung itsura */
+        .content {
+            padding: 2rem;
+        }
+        /* H1 na  */
+        h1 {
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        p {
+            padding: 1rem;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            background-image: url('white-radial-gradient.avif');
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-item h3 {
+            margin: 0.5rem 0;
+        }
+
+        .gallery-item p {
+            margin: 0;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="webpage">
+            <nav>
+                <a href="Homepage.html" class="logos">My Website</a>
+                <ul class="nav-links">
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="AboutPage.html">About Page</a></li>
+                    <li><a href="GalleryPages.html" class="active">Gallery Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h1>My Gallery</h1>
+        <p>Welcome to my gallery! Here you can find my collection of images and videos.</p>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Shrek Image -->
+            <div class="gallery-item">
+                <img src="Shrek.jpg" alt="Shrek meme">
+                <h3>Shrek Meme</h3>
+                <p>A funny meme from the Shrek Movie</p>
+            </div>
+
+            <!-- Video -->
+            <div class="gallery-item">
+                <video width="100%" controls>
+                    <source src="MomoiSingingVideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Momoi Singing</h3>
+                <p>A video meme of Saiba Momoi</p>
+            </div>
+
+            <!-- I just put another blank page para kung mekalangan ilagay o idagdag mabilis magawa -->
+            <div class="gallery-item">
+                <img src="white-radial-gradient.avif" alt="Placeholder">
+                <h3>Adding more Images (This is optional)</h3>
+                <p>This is where the immage go RN!</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>About Page - My Website</title>
+    <style>
+        /* Body styling with background */
+        body {
+            background-image: url('Wallpaper.avif');
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Paragraph styling with gradient background */
+        p {
+            background-image: url('white-radial-gradient.avif');
+        }
+
+        /* H1 styling with gradient background */
+        h1 {
+            background-image: url('white-radial-gradient.avif');
+        }
+
+        /* Header styling */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Buong webpage container */
+        .webpage {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* para sa navigation styling */
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        /* logo name lng para mas madali i implement */
+        .logos {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Active page indicator */
+        .nav-links a.active {
+            font-weight: bold;
+            border-bottom: 2px solid white;
+        }
+
+        /* para sa content styling */
+        .content {
+            padding: 2rem;
+        }
+
+        h1 {
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        h2 {
+            background-image: url('white-radial-gradient.avif');
+            padding: 1rem;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        p {
+            padding: 1rem;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        .about-section {
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="webpage">
+            <nav>
+                <a href="Homepage.html" class="logos">My Website</a>
+                <ul class="nav-links">
+                    <li><a href="Homepage.html">Home</a></li>
+                    <li><a href="AboutPage.html" class="active">About Page</a></li>
+                    <li><a href="GalleryPages.html">Gallery Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+        <h1>About Me</h1>
+
+        <img src="Hitler.jpg" style="width: 400px; height: 500px;" alt="Ako si kianiel cercado solution sa overpopulation">
+        
+        <div class="about-section">
+            <h2>Who I Am</h2>
+            <p>Hello! I'm Kianiel Cercado here and I am currently building my personal website.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>What I Do</h2>
+            <p>I'm currently working on building my skills in web development.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>My Hobbies</h2>
+            <p>My hobbies is to game every class break and go home eat.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>Aspiration</h2>
+            <p>As soon as I graduate I will work and go to the destination that I love to go "Japan"!</p>
+        </div>
+    </main>
+</body>
+</html>

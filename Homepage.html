@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>This is my first Website</title>
+    <style>
+        /* Body styling with background */
+        body {
+            background-image: url('Wallpaper.avif');
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Paragraph para sa lahat ng p for background white */
+        p {
+            background-image: url('white-radial-gradient.avif');
+        }
+
+        /* H1 styling sa gradient background */
+        h1 {
+            background-image: url('white-radial-gradient.avif');
+        }
+
+        /* Lahat ng Header styling */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Buong Webpage container */
+        .webpage {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* sa lahat ng nav menu ito */
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logos {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Active page indicator */
+        .nav-links a.active {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        /* Para maayus ung structure ng padding sa content */
+        .content {
+            padding: 2rem;
+        }
+
+        h1 {
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        p {
+            padding: 1rem;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        /* para ma center ung content */
+        .center {
+            display: block;
+            margin: 2rem auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Video styling */
+        video {
+            display: block;
+            margin: 2rem auto;
+            max-width: 100%;
+        }
+
+        br {
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="webpage">
+            <nav>
+                <!--Nilalaman ng website ko-->
+                <a href="#" class="logos">My Website</a>
+                <ul class="nav-links">
+                    <li><a href="Homepage.html" class="active">Home</a></li>
+                    <li><a href="AboutPage.html">About Page</a></li>
+                    <li><a href="GalleryPages.html">Gallery Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main homepage ko dito -->
+    <main class="content">
+        <!-- Main header or title sa baba ng search page -->
+        <h1>Welcome to my Home page</h1>
+        <p>Welcome to my first website. I am currently working on a website for my projects.</p>
+
+        <!-- Para lumabas ung image -->
+        <img src="Shrek.jpg" alt="Shrek meme" class="center">
+        <p>This is shrek meme from Shrek Movie.</p>
+
+        <br>
+
+        <!-- Para mag appeared ung video -->
+        <video width="650" height="500" controls>
+            <source src="MomoiSingingVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>This a Video meme of Saiba momoi.</p>
+    </main>
+</body>
+</html>
